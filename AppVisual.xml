@@ -11,6 +11,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Left"
+	adroid:onClick = "sendMessage"
         tools:layout_editor_absoluteX="48dp"
         tools:layout_editor_absoluteY="231dp" />
 
@@ -19,6 +20,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Up"
+	android:onCLick = "sendMessage2" 
         tools:layout_editor_absoluteX="150dp"
         tools:layout_editor_absoluteY="152dp" />
 
@@ -27,6 +29,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Down"
+	android:onClick = "sendMessage3"
         tools:layout_editor_absoluteX="150dp"
         tools:layout_editor_absoluteY="311dp" />
 
@@ -35,7 +38,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Right"
-        tools:layout_editor_absoluteX="253dp"
+        android:onClick = "sendMessage4" 
+	tools:layout_editor_absoluteX="253dp"
         tools:layout_editor_absoluteY="233dp" />
 
 </android.support.constraint.ConstraintLayout>

@@ -57,3 +57,19 @@ public class MainActivity extends AppCompatActivity {
     public native String stringFromJNI();
 }
 
+
+public void sendMessage(View view){
+System.out.pringln("Left"); 
+}
+
+public void sendMessage2(View view){
+System.out.println("Up");
+}
+
+public void sendMessage3(View view){
+System.out.println("Down");
+}
+
+public void sendMessage4(View view){
+System.out.println("Right");
+}
