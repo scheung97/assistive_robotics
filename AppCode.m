@@ -1,8 +1,8 @@
 clear all, close all; 
 
 
-x = 1; 
-while x == 1 
+x = 0; 
+while x ~= 1 
     prompt = 'Please select direction (F,L,R,B): '; 
     i = input(prompt,'s');
     
@@ -11,14 +11,17 @@ while x == 1
         fprintf('Please enter an input \n\n'); 
     else
         switch i
-            case 'F' 
+            case {'F', 'f'}
                 fprintf('U = 30 \n'); 
-            case 'L'
+            case {'L', 'l'}
                 fprintf('U = 28 \n');
-            case 'R'
+            case {'R', 'r'}
                 fprintf('U = 29 \n'); 
-            case 'B'
+            case {'B', 'b'}
                 fprintf('U = 31 \n');
+            case {'E','e'} 
+                x = 1; 
+                break; 
             otherwise
                 fprintf('Not valid input \n' ); 
         end
