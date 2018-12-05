@@ -12,13 +12,17 @@ while x ~= 1
     else
         switch i
             case {'F', 'f'}
-                fprintf('U = 30 \n'); 
+                u = 30;  
+                disp(u);
             case {'L', 'l'}
-                fprintf('U = 28 \n');
+                u = 28; 
+                disp(u);
             case {'R', 'r'}
-                fprintf('U = 29 \n'); 
+                u = 29; 
+                disp(u); 
             case {'B', 'b'}
-                fprintf('U = 31 \n');
+                u = 31; 
+                disp(u);
             case {'E','e'} 
                 x = 1; 
                 break; 
