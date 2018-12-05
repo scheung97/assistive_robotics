@@ -8,14 +8,15 @@ end
 
 switch i
 	case 'F'||'f'
-		%output signal to move left
+		fprintf('U = 30 \n'); 
 	case 'L'||'l'
-		%output signal to move up
+		fprintf('U = 28 \n');
 	case 'R'||'r'
-		%output signal to go right
+		fprintf('U = 29 \n'); 
+	case 'B'||'b'
+		fprintf('U = 31 \n');
 	otherwise
-		%do nothing
+		fprintf('Not valid input'); 
 end
 
-%the output signals should correspond to the input for the VR simulator
-%unsure how to get data from the android app
+
