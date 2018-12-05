@@ -1,15 +1,17 @@
-import %signal from android app 
+prompt = 'Please select direction (F,L,R): '); 
 
-i = input(%imported signal%); 
+i = input(prompt,'s');
+
+if isempty(i)
+	i = 'z'; 
+end 
 
 switch i
-	case l
+	case 'F'||'f'
 		%output signal to move left
-	case u
+	case 'L'||'l'
 		%output signal to move up
-	case d
-		%output signal to go down
-	case r 
+	case 'R'||'r'
 		%output signal to go right
 	otherwise
 		%do nothing
