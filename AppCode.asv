@@ -1,0 +1,35 @@
+clear all, close all; 
+
+
+x = 0; 
+while x ~= 1 
+    prompt = 'Please select direction (F,L,R,B): '; 
+    i = input(prompt,'s');
+    
+    if isempty(i)
+        i = 'z';
+        fprintf('Please enter an input \n\n'); 
+    else
+        switch i
+            case {'F', 'f'}
+                u = 30;  
+                disp('Set u = ',u,' and move forward \n');
+            case {'L', 'l'}
+                u = 28; 
+                disp("Set u = ',u,' and move left \n');
+            case {'R', 'r'}
+                u = 29; 
+                disp("Set u = ",u," and move right \n"); 
+            case {'B', 'b'}
+                u = 31; 
+                disp("Set u = ",u," and move backwards \n");
+            case {'E','e'} 
+                x = 1; 
+                disp("Exiting.... \n")
+                break; 
+            otherwise
+                fprintf('Not valid input \n' ); 
+        end
+        
+    end
+end
