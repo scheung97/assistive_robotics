@@ -9,6 +9,9 @@ DEF floor Transform {
   children Shape {
     appearance Appearance {
       material Material {
+        specularColor 0.4 0.4 1
+        emissiveColor 0.2 0.2 0.2
+        diffuseColor 0.6 0.6 1
       }
     }
     geometry Box {
@@ -37,9 +40,13 @@ Background {
   ]
   groundAngle [0.9, 1.5, 1.57]
 }
-DEF wheelchair_parts Group {
+Viewpoint {
+  position 0.0485 2.2337 10.7055
+  orientation 0 0 90 90
+}
+Transform {
   children [
-    DEF rightwheel Transform {
+    DEF rightwheel_0001 Transform {
       translation 0.5 0 0
       scale 0.827181 0.827181 0.827183
       rotation 0 0 1 1.5708
@@ -54,7 +61,7 @@ DEF wheelchair_parts Group {
         }
       }
     }
-    DEF wheelchair_0001 Transform {
+    DEF wheelchair_0002 Transform {
       scale 0.577681 0.577681 0.577681
       children Shape {
         appearance Appearance {
@@ -67,7 +74,7 @@ DEF wheelchair_parts Group {
         }
       }
     }
-    DEF leftwheel_0001 Transform {
+    DEF leftwheel_0002 Transform {
       translation -0.5 0 0
       scale 0.827181 0.827181 0.827183
       rotation 0 0 1 1.5708
@@ -83,8 +90,4 @@ DEF wheelchair_parts Group {
       }
     }
   ]
-}
-Viewpoint {
-  position 0.0485 2.2337 10.7055
-  orientation 0 0 90 90
 }
