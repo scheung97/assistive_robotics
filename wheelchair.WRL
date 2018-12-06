@@ -1,0 +1,102 @@
+#VRML V2.0 utf8
+# Created with V-Realm Builder v2.0
+# Integrated Data Systems Inc.
+# www.ids-net.com
+
+DEF floor_turn Transform {
+  translation 9 -2.2617e-05 -13.7023
+  children Shape {
+    appearance Appearance {
+      material Material {
+      }
+    }
+    geometry Box {
+      size 12 0.1 10
+    }
+  }
+}
+DEF floor Transform {
+  translation 0 -1 -10
+  scale 1 0.999999 0.999999
+  children Shape {
+    appearance Appearance {
+      material Material {
+      }
+    }
+    geometry Box {
+      size 10 0.1 40
+    }
+  }
+}
+Viewpoint {
+  position 0.0485 2.2337 10.7055
+  orientation 0 0 0 0
+}
+Background {
+  skyColor [
+    0.76238 0.8 0.1427,
+    0.277798 0.219779 0.7,
+    0.222549 0.390234 0.7,
+    0.60094 0.662637 0.69 
+  ]
+  skyAngle [0.1, 1.2, 1.57]
+  groundColor [
+    0 0.8 0,
+    0.174249 0.82 0.187362,
+    0.467223 0.82 0.445801,
+    0.621997 0.67 0.600279,
+    0 0 0 
+  ]
+  groundAngle [0.9, 1.5, 1.57]
+}
+DEF wheelchair_parts Group {
+  children [
+    DEF rightwheel Transform {
+      translation 0.5 0 0
+      scale 0.827181 0.827181 0.827183
+      rotation 0 0 1 1.5708
+      children Shape {
+        appearance Appearance {
+          material Material {
+          }
+        }
+        geometry Cylinder {
+          radius 0.3
+          height 0.2
+        }
+      }
+    }
+    DEF wheelchair_0001 Transform {
+      scale 0.577681 0.577681 0.577681
+      children Shape {
+        appearance Appearance {
+          material Material {
+            diffuseColor 0.8 0.214745 0.438982
+          }
+        }
+        geometry Box {
+          size 1 1.5 1
+        }
+      }
+    }
+    DEF leftwheel_0001 Transform {
+      translation -0.5 0 0
+      scale 0.827181 0.827181 0.827183
+      rotation 0 0 1 1.5708
+      children Shape {
+        appearance Appearance {
+          material Material {
+          }
+        }
+        geometry Cylinder {
+          radius 0.3
+          height 0.2
+        }
+      }
+    }
+  ]
+}
+Viewpoint {
+  position 0.0485 2.2337 10.7055
+  orientation 0 0 90 90
+}
