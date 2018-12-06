@@ -4,7 +4,7 @@ Utilizes user inputs via keyboard to control a VR object in Simulink
 Required MATLAB  Apps/Toolboxes: Computer Vision System Toolbox, Simulink 3D Animation
 <!-- For MATLAB mobile implementation: download MATLAB mobile; MATLAB Support Package for Apple iOS Sensors-->
 
-##Details: 
+## Details: 
 **Simulation runs for 40seconds**
 
 Right: rotates object to the right
