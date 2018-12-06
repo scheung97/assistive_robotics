@@ -13,17 +13,22 @@ while x ~= 1
         switch i
             case {'F', 'f'}
                 u = 30;  
-                disp(u);
+                y = ['Set u = ',num2str(u),' and move forward'];
+                disp(y);
             case {'L', 'l'}
                 u = 28; 
-                disp(u);
+                y = ['Set u = ',num2str(u),' and move left'];
+                disp(y);
             case {'R', 'r'}
                 u = 29; 
-                disp(u); 
+                y = ['Set u = ',num2str(u),' and move right'];
+                disp(y); 
             case {'B', 'b'}
                 u = 31; 
-                disp(u);
-            case {'E','e'} 
+                y = ['Set u = ',num2str(u),' and move backwards'];
+                disp(y);
+            case {'E','e'}
+                disp('Exiting....')
                 x = 1; 
                 break; 
             otherwise
