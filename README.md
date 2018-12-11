@@ -38,4 +38,6 @@ Creates a linear velocity based on key press
 1. Implement Bluetooth connectivity to get input values from a mobile device
 2. Utilize Simulink for PWM signal creation instead of VR
 3. Develop a GUI or app to create a more user-friendly design
-4. Incorporate hardware (i.e. motors, raspberry pi, chasis, etc.)
+4. Synchronize the real-time data between Matlab Mobile App and Simulink Model
+5. Incorporate hardware (i.e. motors, raspberry pi, chasis, etc.)
+
