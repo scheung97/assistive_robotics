@@ -18,6 +18,8 @@ Down: moves the object backwards
 
 Any other button: stops object movement
 
+![alt text](https://github.com/scheung97/assistive_robotics/blob/master/Screen%20Shot%202018-12-06%20at%2011.42.38%20PM.png)
+
 ## Angular Velocity Function
 Takes a key press and creates an angular velocity based on which key is pressed
 	
@@ -31,7 +33,6 @@ Creates a linear velocity based on key press
 	(input: keyboard button press)
 
 	(output: linear velocity value)  
-
 
 ## Future Tasks
 	
